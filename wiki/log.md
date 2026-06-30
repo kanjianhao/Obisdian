@@ -52,3 +52,8 @@
   - `entities/hermes-agent.md`
   - `concepts/obsidian-ai-workflows.md`
   - `index.md`
+
+## [2026-06-30] ingest | YouTube Obsidian tutorial inbox note re-check
+- Source note: `00 Inbox/从0搭建AI第二大脑：Obsidian + Claude Code 保姆级全流程教程（非技术人也能做）.md`
+- Result: content matched existing raw source `raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md`
+- Wiki pages were already updated from the same source earlier; no additional concept/entity pages were needed.
