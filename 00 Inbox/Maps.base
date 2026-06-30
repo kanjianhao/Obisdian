@@ -1,0 +1,11 @@
+views:
+  - type: table
+    name: 表格
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 视图
+  - type: map
+    name: Maps
+    mapHeight: 400

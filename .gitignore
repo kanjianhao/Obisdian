@@ -1,0 +1,19 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian transient UI state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json.bak-*-restore
+.obsidian/cache/
+.obsidian/snapshots/
+.trash/
+
+# Claudian session runtime data
+.claudian/sessions/
+
+# Temp files
+*.tmp
+*.temp
