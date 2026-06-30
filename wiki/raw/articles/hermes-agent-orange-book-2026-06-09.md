@@ -1,0 +1,103 @@
+---
+source_url: https://x.com/AlchainHust/status/2064189198110699548
+ingested: 2026-06-30
+sha256: d1fd3f1ef92443fe3a40b7789c541851b678d4a10b40d6d7c93d8b8d1b5bd3e0
+original_vault_path: 自媒体学习/别再问我什么是爱马仕！.md
+---
+![Image](https://pbs.twimg.com/media/HKV5IGmXoAAMswv?format=jpg&name=large)
+
+打开 OpenRouter 本周的应用排行榜。CLI Agent 这一栏，前两名把后面的远远甩开。
+
+第一名 Hermes Agent，4.91T tokens。第二名 OpenClaw，1.25T tokens。第一名：Hermes Agent，获得 4.91 万亿代币。第二名：OpenClaw，获得 1.25 万亿代币。
+
+差了**将近四倍**​。
+
+因为今年初国内OpenClaw热潮太盛，我估计限制很多人还是没意识到这个agent生态的转折趋势。
+
+两个月前，我我倒是也写了本讲 Hermes 的橙皮书📙，本来想一次性把这事说清楚。结果发完之后，公众号后台、评论区、X 私信，问我「Hermes 到底是啥」的反而更多了。有人问是不是爱马仕，有人问是不是又一只龙虾，还有人问跟 OpenClaw 有啥区别。
+
+行吧。这篇一次讲透。而且我把那本书推倒重写了，现在叫《Hermes Agent橙皮书2.0》。
+
+为什么重写？因为四月之前，Hermes Agent已经迭代了9个大版本，从0.7.0折腾到了0.16.0，基本算是换了个样。
+
+## 先回答最多人问的那句
+
+Hermes，不是你想象中的那个爱马仕。是Nous Research开源的一个AI Agent框架。
+
+GitHub搜NousResearch/hermes-agent就能找到。**2026年2月25号上线**​。我四月写第一本书的时候，它在GitHub上有**两万七千颗星**​。我刚才又去看了一眼，**十八万多**​。
+
+两个月，差不多翻了七倍。2026年到现在，没有任何一个开源Agent框架涨得比它快。
+
+![Image](https://pbs.twimg.com/media/HKV4uV1XYAEJCp_?format=jpg&name=large)
+
+但星星多不是重点。涨得快的东西多了去了，大部分涨完就凉。我想说的是它为什么值得你花时间。它跟市面上那一堆Agent、那一群龙虾，到底哪里不一样。
+
+## 它到底能帮我干什么
+
+讲区别之前，先回答一个更朴素的问题：装了它，然后呢？
+
+这些例子如果你用惯了龙虾类产品，应该挺熟悉的。比如你可以让它每天早上帮你把昨天X上几百条关于AI的讨论扒一遍，挑出值得看的发你。
+
+你可以让它同时盯着三个竞品的官网，有新功能就Telegram通知你，自己去睡觉就行了。
+
+它还能自己订机票、整理收件箱、跑调研、写周报。
+
+你把它当一个**会自己长本事的数字同事**就对了。它接手你的活，越干越熟练，你不用教。
+
+但它跟别的Agent真正的分水岭，不在能干活这件事上。在于**它不用你调教**​。
+
+## 它最特别的地方：不用你教，自己长
+
+市面上大多数Agent，你得先写一长串规则教它怎么干。OpenClaw就是典型：[你给它写个soul.md](http://xn--soul-kf5f67d2xgd4zdw6e.md/)，它才能开始像你期望的那样说话。你不写，它就是个有礼貌的空壳。
+
+Hermes反过来的。
+
+你用着用着，它会把做过的事自己提炼成一张张小抄，存起来。下次再碰到类似的活，它自己翻出来照着干，不用你重新说一遍。
+
+![Image](https://pbs.twimg.com/media/HKV4xN-XQAALink?format=jpg&name=large)
+
+做得不好？它看你皱眉头，自己把小抄改了。
+
+小抄多了会乱。所以它还雇了个**内部的"管家"​**​，每隔几天自己翻一遍抽屉，重复的合并，没用的归档，干不了的封存。
+
+你跟它定过一个目标没完成？它会自动续命，不让事掉地上。三件套加起来，才撑得起"缰绳会自己长"这句话。
+
+所以你用得越久，它越顺手。**不是因为你在调教它，是它在调教自己。**
+
+顺便说，怕你搬家麻烦，它内建了一行命令claw migrate，能把你之前在OpenClaw养的那只也搬过来。
+
+![Image](https://pbs.twimg.com/media/HKV41OUW0AAFzc6?format=jpg&name=large)
+
+年初我还写过一本《Harness Engineering橙皮书》，你可以在微信读书搜到，讲的是怎么给AI搭缰绳。指令、约束、反馈、记忆、编排，五件套。那本书的潜台词是：Agent很强，但你得亲手建一整套控制系统才能用好它。
+
+Hermes干了件事，**把这套缰绳直接焊进了出厂设置，而且缰绳会自己长**​。这算是它和OpenClaw最大的分野：一个像养宠物，你手把手教;一个像招了个会自学的同事，你只管用。
+
+## 我为什么非得把整本书重写
+
+四月那本，基于的是Hermes v0.7.0。现在它已经到v0.16.0了。中间迭代了九个minor版本。
+
+这两个月它长出来的东西，我列一下你感受下：原生桌面App、浏览器管理面板、简体中文、23个消息平台接入、一个能让一群Agent协同干活的多Agent看板、还有一套认真写过的安全模型。
+
+四月的Hermes是个住在云端、靠Telegram远程操控的极客玩具。现在它有脸、有手、有桌面图标了。
+
+![Image](https://pbs.twimg.com/media/HKV47dIWMAAVpZN?format=jpg&name=large)
+
+官方自己把这一版命名为「The Surface Release」，意思就是「让你在任何地方都摸得到它」。连GitHub仓库那句简介，都从过去的技术自夸「self-improving」，换成了一句**「The agent that grows with you」**​，会陪你一起长的Agent。
+
+一个产品的自我介绍这么改，本身就说明了它这半年在忙什么。我那本基于v0.7的书，再不重写就成考古资料了。
+
+## 这本2.0橙皮书里写了什么
+
+整本推倒重写，从17章重做成**21节、6个部分**​。
+
+第一部分先把「这是什么」讲明白，不预设你看过第一版。中间几个部分是技术核心：它怎么自我进化、怎么记住你、怎么连接那23个平台、怎么指挥一群Agent干活。最后一部分讲部署、安全，以及那个我每本书都在问的问题：一个会自己改自己的Agent，边界到底在哪，谁来看着它。
+
+![Image](https://pbs.twimg.com/media/HKV4-q4XUAEJYlU?format=jpg&name=large)
+
+中英文两个PDF版本，GitHub上免费下载：
+
+[github.com/alchaincyf/hermes-agent-orange-book](http://github.com/alchaincyf/hermes-agent-orange-book) 
+
+写到这里，其实留给我自己的问题比留给读者的多。一个会自己改自己的Agent，改着改着改出一个我不再认得出的版本怎么办？这是2.0这本书最后一章的开放问题。我没给答案，因为我自己也还在想。
+
+下次谁再问我Hermes是什么，我可能还是会再讲一遍。

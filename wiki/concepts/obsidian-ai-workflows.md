@@ -4,7 +4,7 @@ created: 2026-06-30
 updated: 2026-06-30
 type: concept
 tags: [obsidian, workflow, automation, ai, note-taking]
-sources: [raw/articles/obsidian-ai-workflows-2026-04-22.md, raw/articles/hermes-agent-guide-2026-04-15.md, raw/articles/claude-obsidian-second-brain-2026-04-14.md]
+sources: [raw/articles/obsidian-ai-workflows-2026-04-22.md, raw/articles/hermes-agent-guide-2026-04-15.md, raw/articles/claude-obsidian-second-brain-2026-04-14.md, raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md, raw/articles/obsidian-basics-git-sync-2026-06-30.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -12,7 +12,7 @@ contradictions: []
 
 # Obsidian AI Workflows
 
-Obsidian AI Workflows 指的是把 Obsidian 从“记笔记的软件”扩展成“资料、流程模板、历史结果和 AI 代理协作的工作台”。在这种模式下，信息输入、汇聚、处理、维护和输出都围绕同一个 vault 展开。 ^[raw/articles/obsidian-ai-workflows-2026-04-22.md]
+Obsidian AI Workflows 指的是把 Obsidian 从“记笔记的软件”扩展成“资料、流程模板、历史结果和 AI 代理协作的工作台”。在这种模式下，信息输入、汇聚、处理、维护和输出都围绕同一个 vault 展开。 ^[raw/articles/obsidian-ai-workflows-2026-04-22.md] ^[raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md]
 
 ## 常见流程环节
 
@@ -22,6 +22,12 @@ Obsidian AI Workflows 指的是把 Obsidian 从“记笔记的软件”扩展成
 - 维护：扫描孤儿笔记、补充链接、批量改标签和 YAML 属性。 ^[raw/articles/obsidian-ai-workflows-2026-04-22.md]
 - 输出：把成稿排版后发往外部渠道。 ^[raw/articles/obsidian-ai-workflows-2026-04-22.md]
 
+## 面向新手的落地路径
+
+- 先完成 [[obsidian]] 安装、基础设置、Markdown 入门和双向链接理解。 ^[raw/articles/obsidian-basics-git-sync-2026-06-30.md] ^[raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md]
+- 再接入 Git、同步、CLI 和 Web Clipper 这类基础设施。 ^[raw/articles/obsidian-basics-git-sync-2026-06-30.md] ^[raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md]
+- 最后才是把 [[claude-code]]、[[hermes-agent]] 或其他 Agent 工具接进来做自动整理与生成。 ^[raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md]
+
 ## 为什么适合放在 Obsidian
 
 - 工作流说明、模板、配置和结果都能落在本地 Markdown 文件里。
@@ -30,7 +36,7 @@ Obsidian AI Workflows 指的是把 Obsidian 从“记笔记的软件”扩展成
 
 ## 与 LLM Wiki 的关系
 
-[[llm-wiki]] 偏重知识沉淀；Obsidian AI Workflows 的范围更大，除了知识页，还包括自动写月报、处理会议纪要、发布内容等生产流程。因此它可以把知识库视为其中一个核心子系统。 ^[raw/articles/obsidian-ai-workflows-2026-04-22.md] ^[raw/articles/hermes-agent-guide-2026-04-15.md] ^[raw/articles/claude-obsidian-second-brain-2026-04-14.md]
+[[llm-wiki]] 偏重知识沉淀；Obsidian AI Workflows 的范围更大，除了知识页，还包括自动写月报、处理会议纪要、发布内容等生产流程。因此它可以把知识库视为其中一个核心子系统。 ^[raw/articles/obsidian-ai-workflows-2026-04-22.md] ^[raw/articles/hermes-agent-guide-2026-04-15.md] ^[raw/articles/claude-obsidian-second-brain-2026-04-14.md] ^[raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md]
 
 ## 相关
 
@@ -39,3 +45,4 @@ Obsidian AI Workflows 指的是把 Obsidian 从“记笔记的软件”扩展成
 - [[source-ingestion-workflow]]
 - [[hermes-agent]]
 - [[claude-obsidian]]
+- [[obsidian-sync-via-git]]

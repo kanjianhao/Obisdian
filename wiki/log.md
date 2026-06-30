@@ -35,3 +35,20 @@
   - `concepts/source-ingestion-workflow.md`
   - `entities/obsidian.md`
   - `index.md`
+
+
+## [2026-06-30] ingest | YouTube Obsidian tutorial + Obsidian basics + Hermes orange book batch
+- Created raw sources:
+  - `raw/articles/youtube-obsidian-second-brain-tutorial-2026-06-30.md`
+  - `raw/articles/obsidian-basics-git-sync-2026-06-30.md`
+  - `raw/articles/hermes-agent-orange-book-2026-06-09.md`
+- Created pages:
+  - `entities/claude-code.md`
+  - `concepts/obsidian-sync-via-git.md`
+  - `concepts/slash-command-thinking.md`
+  - `comparisons/claude-code-vs-hermes.md`
+- Updated pages:
+  - `entities/obsidian.md`
+  - `entities/hermes-agent.md`
+  - `concepts/obsidian-ai-workflows.md`
+  - `index.md`
