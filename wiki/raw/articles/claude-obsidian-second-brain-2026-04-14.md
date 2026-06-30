@@ -1,0 +1,198 @@
+---
+source_url: https://x.com/defileo/status/2043762213597397179
+ingested: 2026-06-30
+sha256: 1d46662e093fbe47a5b2fb6509f40197441d90d5213a9e42cd9764823be05c75
+original_vault_path: Obsidian学习库/克劳德 + 黑曜石  如何运用你的第二大脑.md
+---
+![Image](https://pbs.twimg.com/media/HFzYRbVasAENiI1?format=jpg&name=large)
+
+## Your AI forgets everything the moment you close the chat.
+
+你的 Obsidian 保险库里堆满了**无人阅读的笔记 ，包括你自己在内，如果这两个问题相互抵消会怎样呢？**
+
+That's exactly what claude-obsidian does, it's a skill built for Claude Code that turns your Obsidian vault into a persistent, compounding wiki.
+
+<video preload="none" tabindex="-1" playsinline="" aria-label="Embedded video" poster="https://pbs.twimg.com/amplify_video_thumb/2043713194267656192/img/jkuzV3Keg9FqA6vm.jpg" style="width: 100%; height: 100%; position: absolute; background-color: black; top: 0%; left: 0%; transform: rotate(0deg) scale(1.005);"><source type="video/mp4" src="blob:https://x.com/6ee1b0e9-27f9-47a8-834d-c1e3606688fb"></video>
+
+![](https://pbs.twimg.com/amplify_video_thumb/2043713194267656192/img/jkuzV3Keg9FqA6vm.jpg?name=large)
+
+This is how it looks: [https://github.com/AgriciDaniel/claude-obsidian?tab=readme-ov-file](https://github.com/AgriciDaniel/claude-obsidian?tab=readme-ov-file)
+
+ Every source you add gets integrated, every question you ask pulls from everything that's been read. Knowledge compounds like interest, and Claude never forgets what you were working on because the system keeps a hot cache loaded every single session.
+
+This is the complete setup guide follow it step by step and by the end you'll have a working system that gets smarter the more you use it.
+
+## Before we run any commands, here’s the point.
+
+Most Obsidian + AI tools just chat over your vault, AI search with a nicer interface. You still write the notes, make the links, and do the upkeep.
+
+claude-obsidian is different. It follows Karpathy’s LLM Wiki pattern: you drop in a PDF, URL, transcript, anything and Claude builds and maintains the wiki for you. It extracts concepts, creates structured pages with frontmatter, links everything with wikilinks, flags contradictions, and files it where it belongs.
+
+Each new source strengthens the whole network instead of dumping isolated notes.
+
+Here’s how to set it up.
+
+## 第一步/你首先需要准备什么
+
+Three things, get them in this order, first we're gonna download **Obsidian**:
+
+![Image](https://pbs.twimg.com/media/HFzVDXRXkAAIXHt?format=jpg&name=large)
+
+Here you can get it: [https://obsidian.md/](https://obsidian.md/)
+
+Download it, it's fully free, create a new vault, this is just a folder on your computer full of markdown files and name it whatever you want.
+
+**Then you need, Node.js**
+
+Claude Code runs on Node.js 18 or higher, check if you have it:
+
+```text
+node --version
+```
+
+If you see v18+ you're good. If not, download it below, use the LTS version.
+
+![Image](https://pbs.twimg.com/media/HFzWB_9XEAAG207?format=jpg&name=large)
+
+[https://nodejs.org/](https://nodejs.org/)
+
+## Claude Code
+
+This is the command-line version of Claude that reads and writes files on your computer, we're gonna install desktop version:
+
+![Image](https://pbs.twimg.com/media/HFzWVQNasAEoIBY?format=jpg&name=large)
+
+Download claude code for desktop [https://claude.com/product/claude-code](https://claude.com/product/claude-code)
+
+## Step 2 / Install claude-obsidian
+
+Open claude, navigate into the Obsidian vault folder you created, then paste this:
+
+```text
+cd path/to/your-vault
+```
+
+Then run these two commands one after the other 1/2:
+
+```text
+claude plugin marketplace add AgriciDaniel/claude-obsidian
+```
+
+2/2:
+
+```text
+claude plugin install claude-obsidian@claude-obsidian-marketplace
+```
+
+Done, the plugin copies all 10 skills into your vault automatically, no downloading files manually, no scripts to run.
+
+<video preload="none" tabindex="-1" playsinline="" aria-label="Embedded video" poster="https://pbs.twimg.com/amplify_video_thumb/2043757591319162880/img/MSs0I6hiJVs0KnhX.jpg" style="width: 100%; height: 100%; position: absolute; background-color: black; top: 0%; left: 0%; transform: rotate(0deg) scale(1.005);"><source type="video/mp4" src="blob:https://x.com/65590e78-b17f-4c55-9884-acde496ea13a"></video>
+
+![](https://pbs.twimg.com/amplify_video_thumb/2043757591319162880/img/MSs0I6hiJVs0KnhX.jpg?name=large)
+
+How my second brain looks:
+
+## Step 3: First Launch
+
+Still inside Claude Code, type:
+
+```text
+/wiki
+```
+
+Claude will scaffold the full vault structure, it creates all the wiki folders, initializes the hot cache, sets up the index, and shows you exactly what it built before it does anything. You will see something like this:
+
+```text
+wiki/
+├── concepts/     (frameworks, patterns, ideas)
+├── sources/      (ingested documents)
+├── entities/     (people, tools, organizations)
+├── sessions/     (saved conversations)
+├── log.md        (operation history)
+├── index.md      (one-line summary of every page)
+└── hot.md        (session context cache)
+```
+
+That is your second brain, initialized and ready.
+
+## Step 4: The Three Commands You Need
+
+The whole system lives inside three commands, use them daily and the vault builds itself.
+
+## /save
+
+After any conversation where you worked through something valuable, a decision, a concept, a project plan, type:
+
+```text
+/save
+```
+
+Claude reads the full conversation, identifies the key ideas, creates properly formatted wiki pages with frontmatter and wikilinks, files them in the correct folder, and updates the index. Good conversations do not disappear anymore, they get filed.
+
+## /autoresearch
+
+Want to go deep on a topic? Type:
+
+```text
+/autoresearch your topic here
+```
+
+Claude runs three to five rounds of web research, broad search first, then gap-filling, then following the most important sources. It synthesizes everything into structured wiki pages with citations and cross-references to related concepts already in your vault.
+
+You can customize what sources it prioritizes by editing: skills/autoresearch/references/program.md inside your vault.
+
+A medical researcher might add "prefer PubMed" a startup founder might add "focus on founder blogs and case studies" The default works fine for anything general.
+
+## /canvas
+
+When you want to see your knowledge instead of just read it:
+
+```text
+/canvas describe what you want
+```
+
+Claude creates an Obsidian canvas, an infinite visual board, and populates it with the relevant nodes from your wiki. You can tell it to build flowcharts, knowledge graphs, timelines, or presentation layouts. Drop images, PDFs, videos, and GIFs onto it directly inside Obsidian, the canvas saves as a .canvas file and opens natively.
+
+## Step 5: The Daily Ingest Loop
+
+This is the core habit. Any time you find something worth keeping, an article, a PDF, a video transcript, meeting notes, this is how you add it.
+
+**Drop it in .raw/**
+
+The .raw/ folder is your source archive, drag a file in, paste a URL, save a transcript, nothing in here ever gets modified, it is your original record.
+
+**Tell Claude to ingest it**
+
+```text
+ingest filename or paste the content
+```
+
+Claude runs the wiki-ingest agent, for a typical 20-page document it will create 8 to 15 interconnected wiki pages with an average of 12 wikilinks per page. Entities get their own pages, concepts get their own pages, contradictions with existing knowledge get flagged with \[!contradiction\] callouts. The operation logs to wiki/log.md.
+
+You did not touch a folder, a tag, or a link, it is all done.
+
+**Ask anything**
+
+```text
+what do you know about your topic?
+```
+
+Claude reads the hot cache, scans the index, identifies the relevant wiki pages, and gives you an answer with citations to specific pages in your vault. It is citing your own organized knowledge, not its training data.
+
+## How It Stays Cheap as the Vault Grows:
+
+Will it get expensive with thousands of pages? No.
+
+It uses three files, loaded in order:
+
+\> hot.md: ~500 words of recent context (about 500 tokens) > index.md: one line per page, Claude scans it to find what matters. > Relevant pages only: it loads just the files tied to your question.
+
+So the vault can grow to thousands of pages, and token cost barely changes, you never load everything.
+
+<video preload="none" tabindex="-1" playsinline="" aria-label="Embedded video" poster="https://pbs.twimg.com/amplify_video_thumb/2043761704828579842/img/iNJDzx_ir4mJwWGJ.jpg" style="width: 100%; height: 100%; position: absolute; background-color: black; top: 0%; left: 0%; transform: rotate(0deg) scale(1.005);"><source type="video/mp4" src="blob:https://x.com/fbaaf1f0-d1ce-490b-b4f3-8a818956e2a3"></video>
+
+![](https://pbs.twimg.com/amplify_video_thumb/2043761704828579842/img/iNJDzx_ir4mJwWGJ.jpg?name=large)
+
+## What It Looks Like After a Month:
+
+Open Obsidian’s graph view after a few weeks: a color-coded map of what you’ve read and thought, concepts, sources, entities, linked automatically. Deep topics form clusters, nearby ideas connect, and contradictions get flagged. The “brain-like” graph Obsidian promised. That's it.

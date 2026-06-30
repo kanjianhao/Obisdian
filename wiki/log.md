@@ -19,3 +19,19 @@
   - `entities/obsidian.md`
   - `index.md`
   - `SCHEMA.md`
+
+
+## [2026-06-30] ingest | Obsidian AI workflows + Hermes + claude-obsidian batch
+- Created raw sources:
+  - `raw/articles/obsidian-ai-workflows-2026-04-22.md`
+  - `raw/articles/hermes-agent-guide-2026-04-15.md`
+  - `raw/articles/claude-obsidian-second-brain-2026-04-14.md`
+- Created pages:
+  - `concepts/obsidian-ai-workflows.md`
+  - `entities/hermes-agent.md`
+  - `entities/claude-obsidian.md`
+- Updated pages:
+  - `concepts/llm-wiki.md`
+  - `concepts/source-ingestion-workflow.md`
+  - `entities/obsidian.md`
+  - `index.md`
